@@ -4,14 +4,14 @@
 
 # Maximum and minimum number of peers to connect to per torrent.
 #min_peers = 40
-#max_peers = 100
+max_peers = 52
 
 # Same as above but for seeding completed torrents (-1 = same as downloading)
 #min_peers_seed = 10
-#max_peers_seed = 50
+max_peers_seed = 52
 
 # Maximum number of simultanious uploads per torrent.
-#max_uploads = 15
+max_uploads = 8 
 
 # Global upload and download rate in KiB. "0" for unlimited.
 #download_rate = 0
@@ -56,7 +56,7 @@ port_range = 50500-50500
 
 # Check hash for finished torrents. Might be usefull until the bug is
 # fixed that causes lack of diskspace not to be properly reported.
-#check_hash = no
+check_hash = yes
 
 # Set whetever the client should try to connect to UDP trackers.
 #use_udp_trackers = yes
@@ -72,7 +72,7 @@ port_range = 50500-50500
 # outgoing connections but retries with encryption if they fail, preferring
 # plaintext to RC4 encryption after the encrypted handshake
 #
-# encryption = allow_incoming,enable_retry,prefer_plaintext
+encryption = allow_incoming,try_outgoing,enable_retry
 
 # Enable DHT support for trackerless torrents or when all trackers are down.
 # May be set to "disable" (completely disable DHT), "off" (do not start DHT),
