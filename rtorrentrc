@@ -41,7 +41,7 @@ session = ~/rtorrent/session
 
 # The ip address reported to the tracker.
 #ip = 127.0.0.1
-#ip = rakshasa.no
+ip = vulg.us 
 
 # The ip address the listening socket and outgoing connections is
 # bound to.
